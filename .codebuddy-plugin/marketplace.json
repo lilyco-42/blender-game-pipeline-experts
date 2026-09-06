@@ -1,0 +1,24 @@
+{
+  "name": "blender-game-pipeline-experts",
+  "description": "lilyco-42 的 Blender 游戏资产管线团专家仓库",
+  "owner": {
+    "name": "lilyco-42",
+    "email": "251102081+lilyco-42@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "blender-game-pipeline",
+      "source": "./",
+      "description": "面向游戏美术的 Blender 全链路专家团：低模拓扑 + PBR 烘焙 + 骨骼动画，资产直达 Unity/UE/Godot。",
+      "version": "1.0.0",
+      "author": {
+        "name": "lilyco-42",
+        "email": "251102081+lilyco-42@users.noreply.github.com"
+      },
+      "homepage": "https://github.com/lilyco-42/blender-game-pipeline-experts",
+      "repository": "https://github.com/lilyco-42/blender-game-pipeline-experts",
+      "license": "MIT",
+      "keywords": ["blender", "3d", "game-asset", "pbr", "rigging", "workbuddy", "expert"]
+    }
+  ]
+}

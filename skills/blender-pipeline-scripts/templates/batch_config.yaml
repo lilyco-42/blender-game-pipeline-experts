@@ -1,0 +1,68 @@
+# batch_config.yaml 模板
+
+> 描述一组资产如何批量处理。配合 `scripts/run_pipeline.py` 使用。
+
+```yaml
+# 项目级别
+project:
+  name: my_game_assets
+  version: 1.0.0
+  target_engine: unity    # unity | unreal | godot
+
+# 全局预算
+budget:
+  face_count_max: 5000
+  texture_size: 1024      # 1024 | 2048 | 4096
+  lod_levels: 3
+
+# 资产清单
+assets:
+  - id: sword_001
+    path: ./assets/source/sword_001.blend
+    type: prop            # prop | character | scenery
+    collections:          # 只处理这些 Collection，空 = 全部
+      - Swords
+    output_dir: ./output/sword_001/
+    face_count_target: 1200
+
+  - id: character_hero
+    path: ./assets/source/character_hero.blend
+    type: character
+    collections:
+      - Hero
+    output_dir: ./output/character_hero/
+    face_count_target: 18000
+    has_rigging: true
+
+  - id: barrel_001
+    path: ./assets/source/barrel_001.blend
+    type: prop
+    output_dir: ./output/barrel_001/
+    face_count_target: 800
+
+# 烘焙设置
+baking:
+  engine: cycles          # cycles | eevee
+  samples: 64
+  ray_distance: 0.1
+  maps:
+    - normal
+    - ao
+    - cavity
+
+# 导出设置
+export:
+  formats:
+    - fbx
+  unity_settings:
+    apply_unit_scale: 100  # Blender 单位 m → Unity 单位 cm
+    axis: y_forward_z_up
+  unreal_settings:
+    send_to_unreal: true
+    unreal_project_path: C:/UnrealProject/Content/
+
+# 报告输出
+report:
+  html_output: ./output/report.html
+  log_dir: ./output/logs/
+```

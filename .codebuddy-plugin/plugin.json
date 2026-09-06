@@ -1,0 +1,96 @@
+{
+  "name": "blender-game-pipeline",
+  "version": "1.0.0",
+  "description": "A Blender game-asset production team that turns reference into engine-ready low-poly models, PBR materials, and rigged animations for Unity / UE / Godot.",
+  "author": {
+    "name": "liuqi",
+    "email": "liuqi@local"
+  },
+  "agents": [
+    "./agents/blender-game-pipeline-team-lead.md",
+    "./agents/blender-game-pipeline-modeler.md",
+    "./agents/blender-game-pipeline-texturer.md",
+    "./agents/blender-game-pipeline-rigger.md"
+  ],
+  "skills": [
+    "./skills/blender-pipeline-scripts"
+  ],
+  "expertType": "team",
+  "agentName": "blender-game-pipeline-team-lead",
+  "teamInfo": {
+    "leadAgent": "blender-game-pipeline-team-lead",
+    "memberAgents": [
+      "blender-game-pipeline-modeler",
+      "blender-game-pipeline-texturer",
+      "blender-game-pipeline-rigger"
+    ]
+  },
+  "displayName": {
+    "en": "Blender Game Asset Pipeline",
+    "zh": "Blender 游戏资产管线团"
+  },
+  "profession": {
+    "en": "Blender Game Asset Pipeline",
+    "zh": "Blender 游戏资产管线团"
+  },
+  "displayDescription": {
+    "en": "End-to-end Blender team for game art: low-poly modeling + UV, PBR materials + baking, rigging + animation, ready to ship to Unity / UE / Godot.",
+    "zh": "面向游戏美术的 Blender 全链路：低模拓扑、PBR 烘焙、绑骨动画，资产直达 Unity/UE/Godot。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "03-GameSpatial",
+  "defaultInitPrompt": {
+    "zh": "我想做一个写实风格的角色，导出到 Unity 怎么走管线？",
+    "en": "I want a realistic character exported to Unity — walk me through the pipeline."
+  },
+  "plugin": "blender-game-pipeline",
+  "tags": [
+    { "en": "Low-poly Modeling", "zh": "低模建模" },
+    { "en": "PBR Materials", "zh": "PBR 材质" },
+    { "en": "Rigging & Animation", "zh": "绑骨与动画" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我想做一个写实风格的角色，导出到 Unity 怎么走管线？",
+      "en": "I want a realistic character exported to Unity — walk me through the pipeline."
+    },
+    {
+      "zh": "一个 5k 面的道具模型怎么拆 UV、烘法线、出 PBR？",
+      "en": "How do I unwrap a 5k-tri prop, bake normals, and author PBR maps?"
+    },
+    {
+      "zh": "帮我做一个人形角色的骨骼绑定并导出 Mixamo 兼容的 FBX。",
+      "en": "Rig a humanoid character and export a Mixamo-compatible FBX."
+    }
+  ],
+  "members": [
+    {
+      "id": "blender-game-pipeline-team-lead",
+      "displayName": { "en": "Producer Lin", "zh": "制片人 齐活林" },
+      "profession": { "en": "Production Director", "zh": "交付总监" },
+      "avatar": "avatars/blender-game-pipeline-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "blender-game-pipeline-modeler",
+      "displayName": { "en": "Modeler Kou", "zh": "建模师 寇豆码" },
+      "profession": { "en": "Low-poly Modeler", "zh": "低模建模师" },
+      "avatar": "avatars/blender-game-pipeline-modeler.png",
+      "role": "member"
+    },
+    {
+      "id": "blender-game-pipeline-texturer",
+      "displayName": { "en": "Texturer Yan", "zh": "材质师 严过关" },
+      "profession": { "en": "PBR Texturing & Lighting Artist", "zh": "PBR 材质与灯光师" },
+      "avatar": "avatars/blender-game-pipeline-texturer.png",
+      "role": "member"
+    },
+    {
+      "id": "blender-game-pipeline-rigger",
+      "displayName": { "en": "Rigger Gao", "zh": "绑定师 高见远" },
+      "profession": { "en": "Character Rigger & Animator", "zh": "角色绑定师与动画师" },
+      "avatar": "avatars/blender-game-pipeline-rigger.png",
+      "role": "member"
+    }
+  ]
+}
